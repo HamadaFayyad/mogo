@@ -1,0 +1,122 @@
+@media screen and (max-width: 678px){
+
+    /*----------------------------------------------------------
+                   # Start Header Rules
+    ----------------------------------------------------------*/
+    header .page-head .main-nav
+    {
+        float: none;
+        position: absolute;
+        top: 0;
+        right: -265px;
+        z-index: 99;
+        width: 200px;
+        text-align: left;
+    }
+
+    header .page-head .main-nav .main-links
+    {
+        display: block;
+        padding: 0 0 0 20px;
+        background: linear-gradient(
+                                    to bottom,
+                                    rgb(207, 117, 117),
+                                    rgb(214, 181, 122));
+        box-shadow: 0px 15px 20px rgba(0,0,0, .3)
+    }
+
+    header .page-head .main-nav .mobile-icon{display: block}
+    /*----------------------------------------------------------
+                   # End Header Rules
+    ----------------------------------------------------------*/
+
+    /*----------------------------------------------------------
+                   # Start About Us Rules
+    ----------------------------------------------------------*/
+    .about-us .wrapper{flex-wrap: wrap; justify-content: space-around}
+
+    .about-us .wrapper .post{width: 45%}
+
+    .about-us .wrapper .post:not(:last-child){margin-bottom: 20px}
+    /*----------------------------------------------------------
+                    # End About Us Rules
+    ----------------------------------------------------------*/
+
+    /*----------------------------------------------------------
+                   # Start Service Rules
+    ----------------------------------------------------------*/
+    .service .wrapper{flex-flow: column wrap; justify-content: space-between}
+
+    .service figure{width: 100%; padding-right: 0; margin-bottom: 20px}
+
+    .service .widgets{width: 100%}
+    /*----------------------------------------------------------
+                   # End Service Rules
+    ----------------------------------------------------------*/
+
+    /*----------------------------------------------------------
+                   # start Slider One Rules
+    ----------------------------------------------------------*/
+    #slider-one,
+    #slider-one .container,
+    #slider-one .slides,
+    #slider-two,
+    #slider-two .container,
+    #slider-two .slides
+    {min-height: 400px}
+
+    .slider .slides .slide
+    {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center
+    }
+
+    .slider .slides .slide .slide-info
+    {
+        width: 100% !important;
+        margin-top: 20px;
+        padding-left: 0
+    }
+
+    .slider .prev{left: -10px}
+
+    .slider .next{right: -10px}
+    /*----------------------------------------------------------
+                   # End Slider One Rules
+    ----------------------------------------------------------*/
+
+    /*----------------------------------------------------------
+                   # Start Our Team Rules
+    ----------------------------------------------------------*/
+    .our-team .wrapper{flex-wrap: wrap; justify-content: space-around}
+
+    .our-team .wrapper .post{width: 45%}
+
+    .our-team .wrapper .post:not(:last-child){margin-bottom: 20px}
+    /*----------------------------------------------------------
+                   # End Our Team Rules
+    ----------------------------------------------------------*/
+
+    /*----------------------------------------------------------
+                   # Start Testimonals Rules
+    ----------------------------------------------------------*/
+    .testimonals .opinion{width: 100%; margin-bottom: 0; flex-wrap: wrap}
+
+    .testimonals .opinion:not(:last-of-type){margin-bottom: 50px}
+    /*----------------------------------------------------------
+                   # End Testimonals Rules
+    ----------------------------------------------------------*/
+
+    /*----------------------------------------------------------
+                   # Start Blog Rules
+    ----------------------------------------------------------*/
+    .our-blog .container{flex-wrap: wrap; justify-content: space-around}
+
+    .our-blog .post{width: 45%}
+
+    .our-blog .post:not(:last-of-type){margin-bottom: 30px}
+    /*----------------------------------------------------------
+                   # End Blog Rules
+    ----------------------------------------------------------*/
+}

@@ -1,0 +1,1353 @@
+/*----------------------------------------------------------
+                      # Start Fonts
+----------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat');
+/*----------------------------------------------------------
+                      # End Fonts
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Global Rules
+----------------------------------------------------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box
+}
+
+body{font-family: 'Montserrat', sans-serif; overflow-x: hidden}
+
+.container
+{
+    width: 80%;
+    margin: auto
+}
+
+.fl-left{float: left}
+
+.fl-right{float: right}
+
+.fl-fix:before,
+.fl-fix:after
+{
+    content: " ";
+    display: table;
+    visibility: hidden;
+    clear: both
+}
+
+p{color: #b6b6b6; line-height: 150%; font-size: 80%}
+
+ul{list-style-type: none}
+
+a{text-decoration: none; color: inherit}
+
+img
+{
+    display: block;
+    width: 100%;
+    height: 100%
+}
+/*----------------------------------------------------------
+                   # End Global Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Header Rules
+----------------------------------------------------------*/
+header
+{
+    min-height: 100vh;
+    background: #666 url("../img/eagle-4.jpg") no-repeat 50% 50%;
+    background-size: 130% 130%;
+    color: #fff;
+    overflow: hidden
+}
+
+header .container:first-of-type{height: 100vh; position: relative}
+
+header .overlay
+{
+    min-height: 100vh;
+    background: linear-gradient(
+                            to bottom,
+                            rgba(207, 117, 117, .9),
+                            rgba(214, 181, 122, .9)
+                            )
+}
+
+header .page-head
+{
+    width: 100%;
+    height: 60px;
+    line-height: 60px
+}
+
+header .page-head .logo{width: 40%}
+
+header .page-head .main-nav{width: 60%; text-align: right}
+
+header .page-head .main-nav .mobile-icon
+{
+    position: absolute;
+    top: 15px;
+    left: -105px;
+    /* left: -111px; */
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    /* background: linear-gradient(
+                                to bottom,
+                                rgb(207, 117, 117),
+                                rgb(214, 181, 122));
+    box-shadow: 0px 15px 20px rgba(0,0,0, .3) */
+}
+
+header .page-head .main-nav .mobile-icon .fa
+{
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+header .page-head .main-nav .mobile-icon .close-icon{display: none}
+
+header .page-head .main-nav .main-links
+{
+    display: flex;
+    justify-content: space-between;
+    min-height: 60px
+}
+
+header .page-head .main-nav li
+{
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 75%
+}
+
+header .page-head .main-nav li a
+{
+    padding: 15px 20px 11px 0;
+    position: relative;
+    -webkit-transition: color .5s;
+    transition: color .5s
+}
+
+/* header .page-head .main-nav li + li{padding-left: 6%} */
+
+header .page-head .main-nav li:hover a{color: #fce38a}
+
+header .page-head .main-nav li a:after
+{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #fce38a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: left;
+    -webkit-transition: transform .5s ease-out;
+    transition: transform .5s ease-out
+}
+
+header .page-head .main-nav li:hover a:after
+{
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+header .intro
+{
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+
+}
+
+header .intro h3
+{
+    font-size: 4.70vw;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 100;
+    text-transform: capitalize
+}
+
+header .intro h1{font-size: 10.25vw; font-family: arial}
+
+header .intro .un-line{border-top-color: #fff}
+
+header .intro a
+{
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-bottom-width: 1px
+}
+
+header .container:last-of-type{position: relative}
+
+header .categories
+{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between
+}
+
+header .categories .category
+{
+    width: 23.5%;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+    white-space: nowrap;
+    position: relative
+}
+
+/* header .categories .category + .category{margin-left: 2%} */
+
+header .categories .category:first-of-type::after
+{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background-color: #f38181
+}
+
+header .categories .category span,
+header .categories .category h3
+{
+    display: inline-block
+}
+
+header .categories .category span{font-size: 110%; font-weight: 900}
+
+header .categories .category h3
+{
+    font-size: 80%;
+    font-weight: 100;
+    text-transform: uppercase
+}
+/*----------------------------------------------------------
+                   # End Header Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start About Us Rules
+----------------------------------------------------------*/
+.about-us
+{
+    width: 100%;
+    background-color: #fff;
+    text-align: center
+}
+
+.about-us .wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 70px
+}
+
+.about-us .wrapper .post
+{
+    width: 32%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: box-shadow .5s ease-out;
+    transition: box-shadow .5s ease-out
+}
+
+/* .about-us .post + .post{margin-left: 2%} */
+
+.about-us .post figcaption{color: #fff; text-transform: uppercase}
+
+.about-us .post figcaption .fig-title
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.about-us .post figcaption .fig-title .fa{margin-bottom: 10px}
+
+.about-us .post figcaption .fig-title h5{white-space: nowrap}
+
+.about-us .statistics
+{
+    width: 100%;
+    background-color: #95e1d3
+}
+
+.about-us .statistics .container{display: flex}
+
+.about-us .statistics .stat
+{
+    width: 20%;
+    color: #fff;
+    padding: 50px 0;
+    line-height: 130%;
+    border-left: 1px solid #fff
+}
+
+.about-us .statistics .stat:last-child{border-right: 1px solid #fff}
+
+.about-us .statistics .stat span{font-size: 300%; font-weight: 900}
+
+.about-us .statistics .stat h4
+{
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100
+}
+/*----------------------------------------------------------
+                   # End About Us Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Services Rules
+----------------------------------------------------------*/
+ .services{background-color: #fff; padding-bottom: 40px}
+
+ .services .container
+ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+ }
+
+ .services .post{width: 32%; margin-bottom: 20px; display: flex}
+
+ /* .services .post + .post{margin-left: 2%} */
+
+ .services .post .post-img{width: 20%; text-align: center}
+
+ .services .post .post-img .fa{color: #95e1d3; font-size: 140%}
+
+ .services .post .post-info{width: 80%}
+
+ .services .post .post-info h4
+{
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 80%
+}
+/*----------------------------------------------------------
+                   # End Services Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Devices Rules
+----------------------------------------------------------*/
+#main-content .devices
+{
+    height: 600px;
+    background: #666 url("../img/mountain.jpg") no-repeat fixed 50% 50%;
+    background-size: 100% 100%
+}
+
+#main-content .devices .overlay{height: 600px}
+
+#main-content .devices .container
+{
+    position: relative;
+    height: 400px;
+    bottom: -9px
+}
+
+#main-content .devices .overlay .mockup
+{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden
+}
+
+#main-content .devices .overlay .mockup figure
+{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -17%;
+    z-index: 2;
+    transform: translateX(-50%)
+}
+
+#main-content .devices .overlay .container > figure
+{
+    width: 30%;
+    height: 350px;
+    position: absolute;
+    bottom: -20%;
+    left: 62%;
+    z-index: 3
+}
+/*----------------------------------------------------------
+                   # End Devices Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Service Rules
+----------------------------------------------------------*/
+.service{width: 100%; background-color: #fff}
+
+.service .container > p{text-align: center}
+
+.service .wrapper
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 70px 0
+}
+
+.service figure
+{
+    min-width: 250px;
+    width: calc(50% - 2%);
+    margin-right: 2%;
+    overflow: hidden
+}
+
+.service figure img{transition: .7s}
+
+.service figure:hover img{transform: scale(1.1) rotate(3deg); transition: .7s}
+
+.service .widgets{min-width: 250px; width: 50%}
+
+.service .widgets > input{display: none}
+
+.service .widgets .widget
+{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    -webkit-transition: height .3s ease-out;
+    transition: height .3s ease-out
+}
+
+.service .widgets .widget + .widget{margin-top: 5px}
+
+.service .widgets .widget .widget-hd
+{
+    height: 40px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.service .widgets .widget .widget-hd li{height: 40px; line-height: 40px}
+
+.service .widgets .widget .widget-hd li:first-child
+{
+    width: 15%;
+    text-align: center;
+    font-size: 150%;
+    color: #95e1d3
+}
+
+.service .widgets .widget .widget-hd li:nth-child(2)
+{
+    width: 75%;
+    text-transform: uppercase;
+    font-size: 75%;
+    color: #333
+}
+
+.service .widgets .widget .widget-hd li:last-child
+{
+    width: 10%;
+    text-align: center;
+    color: #ccc
+}
+
+.service .widgets .widget .widget-hd li:last-child label i
+{
+    font-size: 150%;
+    cursor: pointer;
+    -webkit-transition: transform .3s ease-out;
+    transition: transform .3s ease-out
+}
+
+.service .widgets .widget .widg-content
+{
+    width: 100%;
+    height: 150px;
+    padding: 10px 10px ;
+    border-top: 0
+}
+
+.service .widgets .widget .widg-content .txt-wrapper
+{
+    width: 100%;
+    height: 130px;
+    overflow-Y: auto;
+    padding: 0 10px;
+    font-style: italic
+}
+
+#serv-widg-1:checked ~ .widget:first-of-type .widget-hd label i,
+#serv-widg-2:checked ~ .widget:nth-of-type(2) .widget-hd label i,
+#serv-widg-3:checked ~ .widget:last-of-type .widget-hd label i
+{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transform-origin: center
+}
+#serv-widg-1:checked ~ .widget:first-of-type,
+#serv-widg-2:checked ~ .widget:nth-of-type(2),
+#serv-widg-3:checked ~ .widget:last-of-type
+{
+    height: 190px
+}
+/*----------------------------------------------------------
+                   # End Service Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # start Slider One Rules
+----------------------------------------------------------*/
+#slider-one{width: 100%; min-height: 200px; background-color: #f8f8f8}
+
+.slider .container{min-height: 200px; position: relative}
+
+.slider .container > input{display: none}
+
+.slider .slides
+{
+    width: 80%;
+    min-height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.slider .slides .slide
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transition: left .5s ease-out;
+    transition: left .5s ease-out;
+    display: flex
+}
+
+.slider .slides .slide .slide-img
+{
+    width: 120px;
+    height: 120px;
+    font-size: 500%;
+    color: #95e1d3;
+    text-align: center;
+    line-height: 100px;
+    border: 2px solid #95e1d3;
+    align-self: center
+}
+
+.slider .slides .slide .slide-info
+{
+    width: calc(100% - 120px);
+    padding-left: 5%;
+    align-self: center
+}
+
+.slider .slides .slide .slide-info blockquote
+{
+    color: #b4b4b4;
+    line-height: 150%;
+    font-size: 85%;
+    font-style: italic;
+    padding-bottom: 10px
+}
+
+.slider .slides .slide .slide-info blockquote:before,
+.slider .slides .slide .slide-info blockquote::after
+{
+    content: "\201C"
+}
+
+.slider .slides .slide .slide-info h4
+{
+    color: #333;
+    font-size: 90%;
+    font-weight: 100;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: capitalize
+}
+
+.slider .slides .slide .slide-info h4::before
+{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #f38181;
+    margin-right: 5px
+}
+
+.slider .arrow
+{
+    width: 20px;
+    height: 29px;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+    transform: translateY(-50%);
+    cursor: pointer
+}
+
+.slider .prev{left: 0}
+
+.slider .next{right: 0}
+
+.slider .arrow label
+{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    color: #ccc;
+    font-size: 150%;
+    cursor: pointer;
+    display: none
+}
+
+.slider .next label{text-align: right}
+
+#sl1-rd-1:checked ~ .slides .slide:first-child,
+#sl1-rd-2:checked ~ .slides .slide:nth-child(2),
+#sl1-rd-3:checked ~ .slides .slide:last-child
+{
+    left: 0;
+    opacity: 1
+}
+
+#sl1-rd-1:checked ~ .prev label:last-child,
+#sl1-rd-1:checked ~ .next label:nth-child(2),
+#sl1-rd-2:checked ~ .prev label:first-child,
+#sl1-rd-2:checked ~ .next label:last-child,
+#sl1-rd-3:checked ~ .prev label:nth-child(2),
+#sl1-rd-3:checked ~ .next label:first-child
+{
+    display: block;
+    z-index: 1
+}
+/*----------------------------------------------------------
+                   # End Slider One Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Our Team Rules
+----------------------------------------------------------*/
+.our-team
+{
+    width: 100%;
+    background-color: #fff;
+    text-align: center
+}
+
+.our-team .wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 70px
+}
+
+.our-team .wrapper .post{width: 32%}
+
+/* .our-team .wrapper .post + .post{margin-left: 2%} */
+
+.our-team .wrapper .post .img-holder
+{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: box-shadow .5s ease-out;
+    transition: box-shadow .5s ease-out
+}
+
+.our-team .wrapper .post .img-holder .ps-overlay
+{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.our-team .wrapper .post .img-holder .tm-social
+{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    display: flex
+}
+
+.our-team .wrapper .post .img-holder .tm-social a
+{
+    width: 30px;
+    height: 30px;
+    background-color: #fce38a;
+    color: #f38181;
+    text-align: center;
+    line-height: 30px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.our-team .wrapper .post .img-holder .tm-social a + a
+{
+    border-left: 1px solid #f38181
+}
+
+.our-team .wrapper .post .img-holder .tm-social a:hover
+{
+    background-color: #f38181;
+    color: #fff;
+}
+
+.our-team .wrapper .post figcaption h4
+{
+    color: #333;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100
+}
+
+.our-team .wrapper .post figcaption small
+{
+    color: #afafaf;
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 75%
+}
+/*----------------------------------------------------------
+                   # End Our Team Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Logos Rules
+----------------------------------------------------------*/
+.logos
+{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f8f8f8
+}
+
+.logos .container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.logos .logo{width: 115px; height: 115px}
+
+.logos .logo:not(:last-of-type){margin-bottom: 20px}
+/*----------------------------------------------------------
+                   # End Logos Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Our Work Rules
+----------------------------------------------------------*/
+.our-works
+{
+    width: 100%;
+    background-color: #fff;
+    text-align: center
+}
+
+.our-works p{padding: 0 20%}
+
+.our-works .wrapper{display: flex; padding-top: 50px}
+
+.our-works .wrapper .col-1{width: 25%}
+
+.our-works .wrapper figure{position: relative; overflow: hidden}
+
+.our-works .wrapper figure:hover .ps-overlay{top: 0}
+
+.our-works .wrapper .col-1 > figure{width: 100%}
+
+.our-works .wrapper .col-1 > figure{height: 300px}
+
+.our-works .wrapper > figure{height: 600px}
+
+.our-works .wrapper .col-1 .ps-overlay .inner-wrapper
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    line-height: 175%;
+    text-align: center
+}
+
+.our-works .wrapper .col-1 .ps-overlay .inner-wrapper .fa{font-size: 200%}
+
+.our-works .wrapper .col-1 .ps-overlay .inner-wrapper h4
+{
+    font-weight: 100;
+    font-size: 85%;
+    text-transform: uppercase;
+    white-space: nowrap
+}
+
+.our-works .wrapper .col-1 .ps-overlay .inner-wrapper small
+{
+    font-style: italic;
+    font-size: 80%;
+    white-space: nowrap
+}
+/*----------------------------------------------------------
+                   # End Our Work Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # start Slider Two Rules
+----------------------------------------------------------*/
+#slider-two{width: 100%; min-height: 300px; background-color: #fff}
+
+#slider-two .container,
+#slider-two .slides
+{min-height: 300px}
+
+#slider-two .slides .slide figure
+{
+    width: 150px;
+    height: 150px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+#slider-two .slides .slide figure img{border-radius: 50%}
+
+#slider-two .slides .slide article{width: calc(100% - 150px)}
+
+#sl2-rd-1:checked ~ .slides .slide:first-child,
+#sl2-rd-2:checked ~ .slides .slide:nth-child(2),
+#sl2-rd-3:checked ~ .slides .slide:last-child
+{
+    left: 0;
+    opacity: 1
+}
+
+#sl2-rd-1:checked ~ .prev label:last-child,
+#sl2-rd-1:checked ~ .next label:nth-child(2),
+#sl2-rd-2:checked ~ .prev label:first-child,
+#sl2-rd-2:checked ~ .next label:last-child,
+#sl2-rd-3:checked ~ .prev label:nth-child(2),
+#sl2-rd-3:checked ~ .next label:first-child
+{
+    display: block;
+    z-index: 1
+}
+/*----------------------------------------------------------
+                   # End Slider Two Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Testimonals Rules
+----------------------------------------------------------*/
+.testimonals
+{
+    width: 100%;
+    background: #666 url("../img/testimonals-bg.jpg") no-repeat 50%;
+    background-size: 100% 100%;
+}
+
+.testimonals .container{display: flex; flex-wrap: wrap; padding-bottom: 70px}
+
+.testimonals .opinion{width: 50%; margin-bottom: 50px; display: flex}
+
+.testimonals .opinion figure
+{
+    width: 100px;
+    height: 100px;
+    padding: 1px;
+    border-radius: 50%
+}
+
+.testimonals .opinion figure img{border-radius: 50%}
+
+.testimonals .opinion article{width: calc((100% - 4%) - 100px); padding-left: 4%}
+
+.testimonals .opinion article .un-line{margin: 20px 0}
+
+.testimonals .opinion article h3
+{
+    text-transform: uppercase;
+    color: #333;
+    font-size: 90%
+}
+
+.testimonals .opinion article small
+{
+    text-transform: capitalize;
+    color: #777;
+    font-size: 75%;
+    font-style: italic
+}
+
+.testimonals .opinion article p{color: #888}
+/*----------------------------------------------------------
+                   # End Testimonals Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Blog Rules
+----------------------------------------------------------*/
+.our-blog
+{
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 100px
+}
+
+.our-blog .container{display: flex; justify-content: space-between}
+
+.our-blog .post{width: 32%}
+
+/* .our-blog .post + .post{margin-left: 2%} */
+
+.our-blog .post figure{height: 160px; position: relative}
+
+.our-blog .post figure time
+{
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    bottom: 5%;
+    left: -4%;
+    z-index: 1;
+    background-color: #95e1d3;
+    text-align: center;
+    color: #fff;
+
+}
+
+.our-blog .post figure time > span
+{
+    line-height: 120%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.our-blog .post figure time > span span:first-child
+{
+    display: block;
+    font-size: 150%;
+    font-weight: 900
+}
+
+.our-blog .post figure time > span span:last-child
+{
+    font-size: 80%;
+    font-style: italic
+}
+
+.our-blog .post article{padding: 10px 0 20px; border-bottom: 1px solid #e5e5e5}
+
+.our-blog .post article h3
+{
+    color: #333;
+    font-size: 75%;
+    text-transform: uppercase;
+    padding-bottom: 10px
+}
+
+.our-blog .post .ps-footer{padding-top: 10px}
+
+.our-blog .post .ps-footer span
+{
+    color: #b6b6b6;
+    font-style: italic;
+    font-size: 75%
+}
+
+.our-blog .post .ps-footer span .fa
+{
+    color: #95e1d3;
+    margin-right: 5px;
+    font-size: 130%
+}
+
+.our-blog .post .ps-footer span:last-child{margin-left: 20px}
+/*----------------------------------------------------------
+                   # End Blog Rules
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Loction
+----------------------------------------------------------*/
+.location
+{
+    width: 100%;
+    min-height: 150px;
+    background: #666 url("../img/location-bg.jpg") no-repeat 50% 50%;
+    background-size: 100% 100%;
+    position: relative
+}
+
+.location .overlay
+{
+    min-height: 150px;
+    color: #f38181;
+    text-align: center;
+    padding: 30px 0px
+}
+
+.location .overlay .wrapper > input{display: none}
+
+.location .overlay .wrapper .fa{font-size: 150%}
+
+.location .overlay .wrapper .sec-hd
+{
+    font-weight: 900;
+    font-size: 110%;
+    color: #f38181;
+    padding: 15px 0;
+    cursor: pointer
+}
+
+.location .overlay .wrapper .un-line{margin: 0 auto}
+
+.location .overlay .wrapper .open
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    cursor: pointer
+}
+
+.location .map
+{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #95e1d3;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: center;
+    transform-origin: center
+}
+
+.location .map .close
+{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 100;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #95e1d3;
+    font-size: 80%;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    transition: box-shadow .3s linear
+}
+
+.location .map .close:hover{box-shadow: 0 5px 10px #999}
+
+.location .map iframe
+{
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 5px solid #f8f8f8;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #666 inset;
+    transition: box-shadow .3s linear
+}
+
+.location .map iframe:hover{box-shadow: 0 0 10px #999}
+
+#our-location:checked ~ .map
+{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: transform .5s ease-out;
+    transition: transform .5s ease-out
+}
+/*----------------------------------------------------------
+                   # End Location
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start Footer
+----------------------------------------------------------*/
+.main-ft{width: 100%; background-color: #f8f8f8; padding: 50px 0 20px}
+
+.main-ft .wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 50px
+}
+
+.main-ft .wrapper .post:first-child{width: 40%}
+
+.main-ft .wrapper .post:nth-child(2){width: 34%}
+
+.main-ft .wrapper .post:last-child{width: 22%}
+
+/* .main-ft .wrapper .post + .post{margin-left: 2%} */
+
+.main-ft .wrapper .post:first-child h2
+{
+    color: #ccc;
+    text-transform: uppercase;
+    font-size: 300%;
+    font-weight: 900
+}
+
+.main-ft .wrapper .post:first-child p{padding: 30px 0}
+
+.main-ft .wrapper .post:first-child .social h4{color: #333}
+
+.main-ft .wrapper .post:first-child .social h4 span
+{
+    padding-left: 5px;
+    font-size: 85%
+}
+
+.main-ft .wrapper .post:first-child .social ul
+{
+    margin-top: 10px;
+    padding-top: 10px;
+    white-space: nowrap;
+    border-top: 1px solid #e5e5e5
+}
+
+.main-ft .wrapper .post:first-child .social ul li
+{
+    float: left;
+    color: #95e1d3;
+}
+
+.main-ft .wrapper .post:first-child .social ul li + li{margin-left: 7px}
+
+.main-ft .wrapper .post:first-child .social ul li:first-child
+{
+    color: #bababa;
+    font-size: 80%;
+    font-style: italic;
+    text-transform: capitalize;
+    margin: 0 10px 0 0
+}
+
+.main-ft .wrapper .post:first-child .newsletter{margin-top: 20px}
+
+.main-ft .wrapper .post:first-child .inputgroup
+{
+    height: 35px;
+    position: relative
+}
+
+.main-ft .wrapper .post:first-child .inputgroup input
+{
+    position: absolute;
+    top: 0;
+    height: 30px;
+    line-height: 30px
+}
+
+.main-ft .wrapper .post:first-child .inputgroup input[type="text"]
+{
+    width: 60%;
+    left: 0;
+    font-style: italic;
+    padding-left: 10px;
+    border: 1px solid #e7e7e7
+}
+
+.main-ft .wrapper .post:first-child .inputgroup input[type="submit"]
+{
+    width: 30%;
+    left: 60%;
+    background-color: #95e1d3;
+    color: #fff;
+    text-align: center
+}
+
+.main-ft .wrapper .post h3
+{
+    color: #474747;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 90%;
+    margin-bottom: 15px
+}
+
+.main-ft .wrapper .post:nth-child(2) .article{display: flex; flex-wrap: wrap}
+
+.main-ft .wrapper .post:nth-child(2) .article:not(:last-of-type){margin-bottom: 8px}
+
+/* .main-ft .wrapper .post:nth-child(2) .article + .article{margin-top: 8px} */
+
+.main-ft .wrapper .post:nth-child(2) .art-img{width: 35%; height: 80px}
+
+.main-ft .wrapper .post:nth-child(2) .art-content{width: 65%; padding-left: 3%;}
+
+.main-ft .wrapper .post:nth-child(2) .art-content p
+{
+    color: #474747;
+    text-transform: uppercase;
+    font-size: 65%;
+    padding-top: 5px
+}
+
+.main-ft .wrapper .post:nth-child(2) time
+{
+    color: #b4b4b4;
+    font-style: italic;
+    font-size: 75%
+}
+
+.main-ft .wrapper .post:last-child .photos
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between
+}
+
+.main-ft .wrapper .post:last-child .photos figure
+{
+    flex-basis: calc(98% / 3);
+    height: 78px;
+    padding-bottom: 7px
+}
+
+.main-ft .wrapper .post:last-child .more
+{
+    display: block;
+    color: #919191;
+    font-size: 75%;
+    font-style: italic;
+    margin-top: 13px
+}
+
+footer .copyright
+{
+    text-align: center;
+    padding-top: 20px;
+    text-transform: capitalize
+}
+/*----------------------------------------------------------
+                   # End Footer
+----------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                   # Start My Framwork
+----------------------------------------------------------*/
+.un-line
+{
+    display: block;
+    width: 40px;
+    border-top: 2px solid #f38181;
+    margin: 30px auto
+}
+
+.sec-qus-hd
+{
+    font-size: 105%;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    padding: 60px 0 15px;
+    color: #333
+}
+
+.sec-hd
+{
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+}
+
+.ps-shadow:hover{box-shadow: 8px 8px 0 #95e1d3}
+
+.ps-overlay
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: linear-gradient(
+                            to bottom,
+                            rgba(207, 117, 117, .9),
+                            rgba(214, 181, 122, .9)
+                            );
+    -webkit-transition: top .5s ease-out;
+    transition: top .5s ease-out
+}
+.ps-shadow:hover .ps-overlay{top: 0}
+
+.overlay
+{
+    width: 100%;
+    background-color: rgba(255, 255, 255, .8)
+}
+/*-----------------------------------------------------------
+                  # End My Framwork
+-----------------------------------------------------------*/

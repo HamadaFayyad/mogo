@@ -1,0 +1,118 @@
+@media screen and (max-width: 540px)
+{
+    /*----------------------------------------------------------
+                   # Start Header Rules
+    ----------------------------------------------------------*/
+    header .container:last-of-type{margin-left: 10px}
+
+    header .categories
+    {
+        width: auto;
+        flex-flow: column wrap;
+        justify-content: space-around
+    }
+
+    header .categories .category
+    {
+        width: 100%;
+        border-top: 0;
+        padding: 0;
+        margin-bottom: 20px
+    }
+
+    header .categories .category:first-of-type::after{display: none}
+
+    header .categories .category span{cursor: pointer}
+
+    header .categories .category h3
+    {
+        position: relative;
+        background-color: #95e1d3;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 4px;
+        margin-left: 30px;
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s
+    }
+
+    header .categories .category span:hover + h3
+    {
+        margin-left: 10px;
+        visibility: visible;
+        opacity: 1;
+        transition: .5s
+    }
+
+    header .categories .category h3::before
+    {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -8px;
+        transform: translateY(-50%);
+        border-width: 8px 8px 8px 0;
+        border-style: solid;
+        border-color: transparent #95e1d3
+    }
+    /*----------------------------------------------------------
+                   # End Header Rules
+    ----------------------------------------------------------*/
+
+    /*----------------------------------------------------------
+                   # Start about Us Rules
+    ----------------------------------------------------------*/
+    about-us .wrapper{justify-content: center}
+
+    .about-us .wrapper .post{width: 100%}
+
+    /*----------------------------------------------------------
+                   # End about Us Rules
+    ----------------------------------------------------------*/
+
+    /*----------------------------------------------------------
+                   # Start Services Rules
+    ----------------------------------------------------------*/
+    .services .post
+    {
+        width: 50%;
+        padding: 0 5px;
+        margin: 0;
+        display: block;
+        text-align: center
+    }
+
+    .services .post:not(:last-of-type){margin-bottom: 30px}
+
+    .services .post .post-img,
+    .services .post .post-info
+    {width: 100%}
+
+    .services .post .post-img .fa
+    {
+        font-size: 200%;
+        margin-bottom: 10px
+    }
+    /*----------------------------------------------------------
+                   # End Services Rules
+    ----------------------------------------------------------*/
+
+    /*----------------------------------------------------------
+                   # Start Our Team Rules
+    ----------------------------------------------------------*/
+    .our-team .wrapper .post{width: 100%}
+    /*----------------------------------------------------------
+                   # End Our Team Rules
+    ----------------------------------------------------------*/
+
+    /*----------------------------------------------------------
+                   # Start Our Blog Rules
+    ----------------------------------------------------------*/
+    .our-blog .post{width: 100%}
+    /*----------------------------------------------------------
+                   # End Our Blog Rules
+    ----------------------------------------------------------*/
+}

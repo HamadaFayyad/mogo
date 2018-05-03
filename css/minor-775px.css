@@ -1,0 +1,19 @@
+@media screen and (max-width: 775px)
+{
+    .services .post{width: 50%; padding-right: 10px}
+
+    .main-ft .wrapper{flex-wrap: wrap}
+
+    .main-ft .wrapper .post:first-child,
+    .main-ft .wrapper .post:nth-child(2),
+    .main-ft .wrapper .post:last-child
+    {width: 100%}
+
+    .main-ft .wrapper .post:not(:last-child){margin-bottom: 50px}
+
+    .main-ft .wrapper .post:nth-child(2) figure{width: 150px; height: 120px}
+
+    .main-ft .wrapper .post:nth-child(2) .art-content p{font-size: 80%}
+
+    .main-ft .wrapper .post:last-child .photos figure{height: 150px}
+}

@@ -1,0 +1,10 @@
+@media screen and (max-width: 400px){
+
+    .about-us .statistics .stat{width: 100%}
+
+    .services .post{width: 100%}
+
+    .main-ft .wrapper .post:last-child .photos figure{flex-basis: calc(98% / 2)}
+
+    .our-works .wrapper .col-1{width: 100%}
+}

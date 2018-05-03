@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px)
+{
+    .about-us .statistics .container
+    {
+        flex-wrap: wrap;
+        justify-content: space-around
+    }
+
+    .about-us .statistics .stat{width: 50%; border-left: 0}
+
+    .about-us .statistics .stat:last-child{border-right: 0}
+
+}
