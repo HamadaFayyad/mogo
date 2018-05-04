@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale= 1">
-        <meta name="description" content="Mogo">
+        <meta name="description" content="Mogo Website - Psd To Code">
         <title>Mogo</title>
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -15,8 +15,15 @@
         <link rel="stylesheet" href="css/minor-400px.css">
     </head>
     <body>
+
+        <div class="page-loader">
+            <div class="center">
+                <div class="loader loader-1"></div>
+                <div class="loader loader-2"></div>
+            </div>
+        </div>
         <!-- Start Header -->
-        <header>
+        <header id="home" class="header">
             <div class="overlay">
                 <div class="container">
                     <div class="page-head fl-fix">
@@ -27,13 +34,31 @@
                                 <i class="fa fa-bars open-icon" aria-hidden="true"></i>
                             </div>
                             <ul class="main-links">
-                                <li><a href="">about</a></li>
-                                <li><a href="">services</a></li>
-                                <li><a href="">work</a></li>
-                                <li><a href="">blog</a></li>
-                                <li><a href="">contact</a></li>
-                                <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a href=""><i class="fa fa-search"></i></a></li>
+                                <li class="aboutus-link">
+                                    <a href="#aboutUs" class="link">about</a>
+                                </li>
+                                <li class="ourservices-link">
+                                    <a href="#ourServices" class="link">services</a>
+                                </li>
+                                <li class="ourwork-link">
+                                    <a href="#ourWork" class="link">work</a>
+                                </li>
+                                <li class="ourblog-link">
+                                    <a href="#ourBlog" class="link">blog</a>
+                                </li>
+                                <li class="contact-link">
+                                    <a href="#contact" class="link">contact</a>
+                                </li>
+                                <li class="link">
+                                    <a href="" class="link">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                                <li class="link">
+                                    <a href="" class="link">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -47,19 +72,19 @@
                 <div class="container">
                     <div class="categories">
                         <section class="category">
-                            <span>01</span>
+                            <a href="#home" class="link">01</a>
                             <h3>intro</h3>
                         </section>
                         <section class="category">
-                            <span>02</span>
+                            <a href="#ourWork" class="link">02</a>
                             <h3>work</h3>
                         </section>
                         <section class="category">
-                            <span>03</span>
+                            <a href="#aboutUs" class="link">03</a>
                             <h3>about</h3>
                         </section>
                         <section class="category">
-                            <span>04</span>
+                            <a href="#contact" class="link">04</a>
                             <h3>contacts</h3>
                         </section>
                     </div>
@@ -72,7 +97,7 @@
         <div id="main-content">
 
             <!-- Start About Us -->
-            <section class="about-us">
+            <section id="aboutUs" class="about-us">
                 <h4 class="sec-qus-hd">What we do</h4>
                 <h2 class="sec-hd">styory about us</h2>
                 <span class="un-line"></span>
@@ -154,7 +179,7 @@
             <!-- End About Us -->
 
             <!-- Start Services -->
-            <section class="services">
+            <section id="ourServices" class="services">
                 <h4 class="sec-qus-hd">We work with</h4>
                 <h2 class="sec-hd">amazing services</h2>
                 <span class="un-line"></span>
@@ -249,7 +274,7 @@
             <!-- EnD Services -->
 
             <!-- Start Devices -->
-            <div class="devices">
+            <div id="responsive" class="devices">
                 <section class="overlay">
                     <h4 class="sec-qus-hd">for all devices</h4>
                     <h2 class="sec-hd">unique design</h2>
@@ -269,7 +294,7 @@
             <!-- End Devices -->
 
             <!-- Start Service -->
-            <section class="service">
+            <section id="servicesCategories" class="service">
                 <h4 class="sec-qus-hd">service</h4>
                 <h2 class="sec-hd">what we do</h2>
                 <span class="un-line"></span>
@@ -478,7 +503,7 @@
             <!-- End Slider One -->
 
             <!-- Start Our team -->
-            <section class="our-team">
+            <section id="outTeam" class="our-team">
                 <h4 class="sec-qus-hd">who we are</h4>
                 <h2 class="sec-hd">meet our team</h2>
                 <span class="un-line"></span>
@@ -578,7 +603,7 @@
             <!-- End Our Team -->
 
             <!-- Start Logos -->
-            <div class="logos">
+            <div id="ourClients" class="logos">
                 <div class="container">
                     <figure class="logo"><img src="img/logos/logo-1.png" alt="logo"></figure>
                     <figure class="logo"><img src="img/logos/logo-3.png" alt="logo"></figure>
@@ -591,7 +616,7 @@
             <!-- End Logos -->
 
             <!-- Start Our Works -->
-            <section class="our-works">
+            <section id="ourWork" class="our-works">
                 <h4 class="sec-qus-hd">what we do</h4>
                 <h2 class="sec-hd">some of our works</h2>
                 <span class="un-line"></span>
@@ -860,7 +885,7 @@
             <!-- End Testimonals -->
 
             <!-- Start Blog -->
-            <section class="our-blog">
+            <section id="ourBlog" class="our-blog">
                 <h4 class="sec-qus-hd">our stories</h4>
                 <h2 class="sec-hd">latest blogs</h2>
                 <span class="un-line"></span>
@@ -951,155 +976,155 @@
             </div>
             <!-- End Location -->
 
-            <!--Start Footer -->
-            <footer class="main-ft">
-                <div class="container">
-                    <div class="wrapper">
-
-                        <!-- Start Post 1 -->
-                        <section class="post">
-                            <h2>mogo</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, vis ea unum detracto consetetur. Alia honestatis omittantur sed et, mea ne alienum menandri quaestio.
-                            </p>
-                            <section class="social">
-                                <h4>15K<span>followers</span></h4>
-                                <ul class="fl-fix">
-                                    <li>follow us:</li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <i class="fa fa-facebook" aria-hidden="true">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <i class="fa fa-twitter" aria-hidden="true">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <i class="fa fa-instagram" aria-hidden="true">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <i class="fa fa-pinterest-p" aria-hidden="true">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <i class="fa fa-google-plus" aria-hidden="true">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <i class="fa fa-youtube-play" aria-hidden="true">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <i class="fa fa-dribbble" aria-hidden="true">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <i class="fa fa-tumblr" aria-hidden="true">
-                                            </i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <form class="newsletter">
-                                    <div class="inputgroup">
-                                        <input type="text" name="email" placeholder="your email...">
-                                        <input type="submit" value="subscribe">
-                                    </div>
-                                </form>
-                            </section>
-                        </section>
-                        <!-- End Post 1 -->
-
-                        <!-- Start Post 2 -->
-                        <section class="post">
-                            <h3>blogs</h3>
-                            <div class="posts">
-                                <article class="article">
-                                    <figure class="art-img">
-                                        <img src="img/ourwork/ourwork-4.jpg" alt="post image">
-                                    </figure>
-                                    <div class="art-content">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, vis ea unum detracto consetetur.
-                                        </p>
-                                        <time datetime="2016-01-09">jan 9, 2016</time>
-                                    </div>
-                                </article>
-                                <article class="article">
-                                    <figure class="art-img">
-                                        <img src="img/ourwork/ourwork-5.jpg" alt="post image">
-                                    </figure>
-                                    <div class="art-content">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, vis ea unum detracto consetetur.
-                                        </p>
-                                        <time datetime="2016-01-09">jan 9, 2016</time>
-                                    </div>
-                                </article>
-                                <article class="article">
-                                    <figure class="art-img">
-                                        <img src="img/ourwork/ourwork-7.jpg" alt="post image">
-                                    </figure>
-                                    <div class="art-content">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, vis ea unum detracto consetetur.
-                                        </p>
-                                        <time datetime="2016-01-09">jan 9, 2016</time>
-                                    </div>
-                                </article>
-                            </div>
-                        </section>
-                        <!-- End Post 2 -->
-
-                        <!-- Start Post 3 -->
-                        <section class="post">
-                            <h3>instagram</h3>
-                            <div class="photos">
-                                <figure><img src="img/ourwork/ourwork-1.jpg" alt="post image"></figure>
-                                <figure><img src="img/ourwork/ourwork-2.png" alt="post image"></figure>
-                                <figure><img src="img/ourwork/ourwork-3.jpg" alt="post image"></figure>
-                                <figure><img src="img/ourwork/ourwork-4.jpg" alt="post image"></figure>
-                                <figure><img src="img/ourwork/ourwork-5.jpg" alt="post image"></figure>
-                                <figure><img src="img/ourwork/ourwork-6.jpg" alt="post image"></figure>
-                                <figure><img src="img/ourwork/ourwork-7.jpg" alt="post image"></figure>
-                                <figure><img src="img/ourwork/ourwork-3.jpg" alt="post image"></figure>
-                                <figure><img src="img/ourwork/ourwork-5.jpg" alt="post image"></figure>
-                            </div>
-                            <a class="more">View more photos</a>
-                        </section>
-                        <!-- Start Post 3 -->
-
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p>all rights reserved© 2018 hamada fayad</p>
-                </div>
-            </footer>
-            <!--End Footer -->
-
         </div>
         <!-- End Main Content -->
 
-        <!-- Start Footer -->
-        <footer>
+        <!--Start Footer -->
+        <footer id="contact" class="main-ft">
+            <div class="container">
+                <div class="wrapper">
 
+                    <!-- Start Post 1 -->
+                    <section class="post">
+                        <h2>mogo</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, vis ea unum detracto consetetur. Alia honestatis omittantur sed et, mea ne alienum menandri quaestio.
+                        </p>
+                        <section class="social">
+                            <h4>15K<span>followers</span></h4>
+                            <ul class="fl-fix">
+                                <li>follow us:</li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <i class="fa fa-facebook" aria-hidden="true">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <i class="fa fa-twitter" aria-hidden="true">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <i class="fa fa-instagram" aria-hidden="true">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <i class="fa fa-pinterest-p" aria-hidden="true">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <i class="fa fa-google-plus" aria-hidden="true">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <i class="fa fa-youtube-play" aria-hidden="true">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <i class="fa fa-dribbble" aria-hidden="true">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <i class="fa fa-tumblr" aria-hidden="true">
+                                        </i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <form class="newsletter">
+                                <div class="inputgroup">
+                                    <input type="text" name="email" placeholder="your email...">
+                                    <input type="submit" value="subscribe">
+                                </div>
+                            </form>
+                        </section>
+                    </section>
+                    <!-- End Post 1 -->
+
+                    <!-- Start Post 2 -->
+                    <section class="post">
+                        <h3>blogs</h3>
+                        <div class="posts">
+                            <article class="article">
+                                <figure class="art-img">
+                                    <img src="img/ourwork/ourwork-4.jpg" alt="post image">
+                                </figure>
+                                <div class="art-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, vis ea unum detracto consetetur.
+                                    </p>
+                                    <time datetime="2016-01-09">jan 9, 2016</time>
+                                </div>
+                            </article>
+                            <article class="article">
+                                <figure class="art-img">
+                                    <img src="img/ourwork/ourwork-5.jpg" alt="post image">
+                                </figure>
+                                <div class="art-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, vis ea unum detracto consetetur.
+                                    </p>
+                                    <time datetime="2016-01-09">jan 9, 2016</time>
+                                </div>
+                            </article>
+                            <article class="article">
+                                <figure class="art-img">
+                                    <img src="img/ourwork/ourwork-7.jpg" alt="post image">
+                                </figure>
+                                <div class="art-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, vis ea unum detracto consetetur.
+                                    </p>
+                                    <time datetime="2016-01-09">jan 9, 2016</time>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <!-- End Post 2 -->
+
+                    <!-- Start Post 3 -->
+                    <section class="post">
+                        <h3>instagram</h3>
+                        <div class="photos">
+                            <figure><img src="img/ourwork/ourwork-1.jpg" alt="post image"></figure>
+                            <figure><img src="img/ourwork/ourwork-2.png" alt="post image"></figure>
+                            <figure><img src="img/ourwork/ourwork-3.jpg" alt="post image"></figure>
+                            <figure><img src="img/ourwork/ourwork-4.jpg" alt="post image"></figure>
+                            <figure><img src="img/ourwork/ourwork-5.jpg" alt="post image"></figure>
+                            <figure><img src="img/ourwork/ourwork-6.jpg" alt="post image"></figure>
+                            <figure><img src="img/ourwork/ourwork-7.jpg" alt="post image"></figure>
+                            <figure><img src="img/ourwork/ourwork-3.jpg" alt="post image"></figure>
+                            <figure><img src="img/ourwork/ourwork-5.jpg" alt="post image"></figure>
+                        </div>
+                        <a class="more">View more photos</a>
+                    </section>
+                    <!-- Start Post 3 -->
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>all rights reserved© 2018 hamada fayad</p>
+            </div>
         </footer>
-        <!-- End Footer -->
+        <!--End Footer -->
+
+        <!-- Start Back To Top -->
+        <a href="#home" class="back-to-top">
+            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+        </a>
+        <!-- End Back To Top -->
 
         <!-- Start Javascript Files -->
         <script

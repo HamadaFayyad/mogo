@@ -1,10 +1,14 @@
 @media screen and (max-width: 400px){
 
-    .about-us .statistics .stat{width: 100%}
+    .about-us .statistics .stat,
+    .services .post,
+    .our-works .wrapper .col-1
+    {width: 100%}
 
-    .services .post{width: 100%}
+    #main-content .devices .overlay .mockup figure{width: 80%}
+
+    #main-content .devices .overlay .container > figure{width: 60%; left: 55%}
 
     .main-ft .wrapper .post:last-child .photos figure{flex-basis: calc(98% / 2)}
-
-    .our-works .wrapper .col-1{width: 100%}
 }
+

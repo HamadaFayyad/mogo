@@ -22,7 +22,7 @@
 
     header .categories .category:first-of-type::after{display: none}
 
-    header .categories .category span{cursor: pointer}
+    header .categories .category .link{cursor: pointer}
 
     header .categories .category h3
     {
@@ -39,7 +39,7 @@
         transition: .5s
     }
 
-    header .categories .category span:hover + h3
+    header .categories .category .link:hover + h3
     {
         margin-left: 10px;
         visibility: visible;
